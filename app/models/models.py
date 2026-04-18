@@ -17,7 +17,12 @@ class RecipeIngredient:
     units: str = ""
 
 @dataclass
+class RecipeStep:
+    step_number: int
+    instruction: str = ""
+
+@dataclass
 class Recipe:
     name: str = ""
     ingredients: list[RecipeIngredient] = field(default_factory=list)
-    directions: list[str] = field(default_factory=list)
+    steps: list[RecipeStep] = field(default_factory=list)
