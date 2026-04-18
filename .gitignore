@@ -1,0 +1,47 @@
+# Bytecode / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+pip-wheel-metadata/
+
+# Logs
+logs/
+*.log
+
+# Runtime
+*.pid
+*.lock
+
+# Environment files
+.env
+.env.*
+
+# VS Code
+.vscode/
+
+# PyCharm / IntelliJ
+.idea/
+
+# Other editors
+*.swp
+*.swo
+
+# Custom ignore
+structure_template.md
+tests/
