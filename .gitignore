@@ -45,3 +45,6 @@ logs/
 # Custom ignore
 structure_template.md
 tests/
+
+# Database files
+*.db
