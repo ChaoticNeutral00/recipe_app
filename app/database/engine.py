@@ -11,4 +11,3 @@ def get_database_url(testing: bool = False) -> str:
 def get_engine(testing: bool = False):
     db_url = get_database_url(testing=testing)
     return create_engine(db_url, echo=True)
-
