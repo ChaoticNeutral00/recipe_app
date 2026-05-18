@@ -18,6 +18,9 @@ class Ingredient(Base):
 
     recipe_ingredients: Mapped[list["RecipeIngredient"]] = relationship(back_populates="ingredient")
 
+    def __repr__(self):
+        return f"Ingredient(id={self.id}, name='{self.name})"
+
 class RecipeIngredient(Base):
     __tablename__ = "recipe_ingredients"
 
